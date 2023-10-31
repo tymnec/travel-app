@@ -8,8 +8,17 @@ const Hero = () => {
 
       {/* Left Side */}
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
-        <Image src={"/camp.svg"} alt="camp" width={50} height={50} />
+        <Image
+          src={"/camp.svg"}
+          alt="camp"
+          width={50}
+          height={50}
+          className="absolute left-[-5px] top-[-30px] w-10 lg:w-[50px]"
+        />
       </div>
+
+      {/* Title of the section */}
+      <h1></h1>
     </section>
   );
 };
