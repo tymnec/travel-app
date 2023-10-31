@@ -8,16 +8,20 @@ const Navbar = () => {
       {/* Navbar */}
       <Link href={"/"}>
         <Image src={"hilink-logo.svg"} alt="logo" width={100} height={100} />
-        <ul className="hidden h-full gap-12 lg:flex">
-          {NAV_LINKS.map((link) => {
-            return (
-              <Link href={link.href} key={link.key}>
-                {link.label}
-              </Link>
-            );
-          })}
-        </ul>
       </Link>
+      <ul className="hidden h-full gap-12 lg:flex">
+        {NAV_LINKS.map((link) => {
+          return (
+            <Link
+              href={link.href}
+              key={link.key}
+              className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
+            >
+              {link.label}
+            </Link>
+          );
+        })}
+      </ul>
     </nav>
   );
 };
