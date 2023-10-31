@@ -32,6 +32,14 @@ const Hero = () => {
                 <Image src={"/star.svg"} alt="star" width={24} height={24} />
               ))}
           </div>
+
+          {/* Ratings */}
+          <p className="bold-16 lg:bold-20 text-blue-70">
+            235k
+            <span className="regular-16 lg:regular-20 ml-1">
+              Excellent Reviews
+            </span>
+          </p>
         </div>
       </div>
     </section>
