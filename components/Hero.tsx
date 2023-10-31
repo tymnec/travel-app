@@ -43,9 +43,36 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="flex w-full gap-3 sm:flex-row">
+        <div className="flex w-full flex-col gap-3 sm:flex-row">
           <Button type="button" title="Download App" variant="btn_green" />
-          <Button type="button" title="How we work?" icon="/play.svg" variant="btn_white_text" />
+          <Button
+            type="button"
+            title="How we work?"
+            icon="/play.svg"
+            variant="btn_white_text"
+          />
+        </div>
+      </div>
+
+      <div className="relative flex items-start flex-1">
+        <div className="relative z-20 w-[268px] flex-col gap-8 rounded-3xl bg-green-90 px-7 py-8">
+          <div className="flex flex-col">
+            <div className="flexBetween">
+              <p className="text-gray-20 regular-16">Location</p>
+              <Image src={"/close.svg"} alt="close" width={24} height={24} />
+            </div>
+            <p className="bold-20 text-white">Aguas Calientes</p>
+          </div>
+          <div className="flexBetween">
+            <div className="flex flex-col">
+              <p className="regular-16 text-gray-20 block">Distance</p>
+              <p className="bold-20 text-white">173.28 mi</p>
+            </div>
+            <div className="flex flex-col">
+              <p className="regular-16 text-gray-20 block">Elavation</p>
+              <p className="bold-20 text-white">2.040 km</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
