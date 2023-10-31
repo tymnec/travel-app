@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
+import Button from "./Button";
 
 const Hero = () => {
   return (
@@ -40,6 +41,10 @@ const Hero = () => {
               Excellent Reviews
             </span>
           </p>
+        </div>
+
+        <div className="flex w-full gap-3 sm:flex-row">
+          <Button type="button" title="Download" variant="btn_green" />
         </div>
       </div>
     </section>
