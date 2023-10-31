@@ -1,7 +1,12 @@
+import Link from "next/link";
+
 const Navbar = () => {
   return (
-    <nav>Navbar</nav>
-  )
-}
+    <nav className="border-2 border-red-500 flexBetween max-container padding-container relative z-30 py-5">
+      {/* Navbar */}
+      <Link href={"/"}></Link>
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;
