@@ -2,6 +2,7 @@ import React from 'react'
 import Button from './Button'
 import Image from 'next/image'
 
+// Get App Section
 const GetApp = () => {
   return (
     <section className="flexCenter w-full flex-col pb-[100px]">
